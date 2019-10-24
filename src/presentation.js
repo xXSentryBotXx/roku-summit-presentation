@@ -1,5 +1,6 @@
 // Import React
 import React from 'react';
+// import roughViz from 'rough-viz';
 
 // Import Spectacle Core tags
 import {
@@ -12,6 +13,7 @@ import {
   Quote,
   Slide,
   Text,
+  Appear
 } from 'spectacle';
 
 import { Bar, Pie, Donut, Scatter, BarH } from 'react-roughviz';
@@ -24,8 +26,8 @@ require('normalize.css');
 
 const theme = createTheme(
   {
-    primary: '#662d91',
-    secondary: '#DDD',
+    primary: '#DDD',
+    secondary: '#662d91',
     tertiary: '#333',
     quaternary: '#CECECE',
   },
@@ -48,38 +50,139 @@ export default class Presentation extends React.Component {
             Roku Summit 2019
           </Heading>
         </Slide>
-        <Slide transition={['fade']} bgColor="tertiary">
-          <Heading size={6} textColor="primary" caps>
-            Typography
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Roku Summit Topics
           </Heading>
-          <Heading size={1} textColor="secondary">
-            Heading 1
-          </Heading>
-          <Heading size={2} textColor="secondary">
-            Heading 2
-          </Heading>
-          <Heading size={3} textColor="secondary">
-            Heading 3
-          </Heading>
-          <Heading size={4} textColor="secondary">
-            Heading 4
-          </Heading>
-          <Heading size={5} textColor="secondary">
-            Heading 5
-          </Heading>
-          <Text size={6} textColor="secondary">
-            Standard text
-          </Text>
+          <List>
+            <ListItem>9.2 Firmware update.</ListItem>
+            <ListItem>Dev Dashboard Features</ListItem>
+            <ListItem>Updated Cert Requirements</ListItem>
+            <ListItem>Roku Debugging!</ListItem>
+            <ListItem>SceneGraph</ListItem>
+            <ListItem>Roku Pay</ListItem>
+            <ListItem>RAF</ListItem>
+            <ListItem>Voice Commands</ListItem>
+            <ListItem>Roku Products</ListItem>
+          </List>
         </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
-            Standard List
+            9.2 Firmware update
           </Heading>
           <List>
-            <ListItem>Item 1</ListItem>
-            <ListItem>Item 2</ListItem>
-            <ListItem>Item 3</ListItem>
-            <ListItem>Item 4</ListItem>
+            <Appear><ListItem>Instant Sign up</ListItem></Appear>
+            <Appear><ListItem>Roku universal search</ListItem></Appear>
+            <Appear><ListItem>Roku Zones</ListItem></Appear>
+            <Appear><ListItem>Featured Free</ListItem></Appear>
+            <Appear><ListItem>CDN Switching</ListItem></Appear>
+            <Appear><ListItem>Roku Pay</ListItem></Appear>
+            <Appear><ListItem>Audio/CC Track Select</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Dev Dashboard Features
+          </Heading>
+          <List>
+            <Appear><ListItem>Audience Insight Reports</ListItem></Appear>
+            <Appear><ListItem>Multi-User access to same Dev Account</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Updated Certification Requirements
+          </Heading>
+          <List>
+            <Appear><ListItem>April 1st, 2020:</ListItem></Appear>
+            <Appear><ListItem>Enhanced transport controls</ListItem></Appear>
+            <Appear><ListItem>Subscription services must implement RED in signup flow</ListItem></Appear>
+            <Appear><ListItem>New - Instant Signup</ListItem></Appear>
+            <Appear><ListItem>Fall 2020:</ListItem></Appear>
+            <Appear><ListItem>Thumbnails must be displayed during trick play for VOD longer than 15 min</ListItem></Appear>
+            <Appear><ListItem>Subscription services must support on device upgrade and downgrade</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Updated Certification Requirements
+          </Heading>
+          <List>
+            <Appear><ListItem>Giga, Paolo, Jackson frozen at 9.1 and will not accept new builds after Oct 31</ListItem></Appear>
+            <Appear><ListItem>deviceInfo.getVersion() is frozen on all 9s (will return 99999E99), use getOSVersion()</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Roku Debugging
+          </Heading>
+          <List>
+            <Appear><ListItem>9.2 introduces a network debug protocol that works with Microsoft DAP IDEs</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            SceneGraph
+          </Heading>
+          <List>
+            <Appear><ListItem>“rsg_version=1.2” is opt in for 9.2</ListItem></Appear>
+            <Appear><ListItem>Roku working on Selenium style automation system but its not available yet</ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Roku Pay
+          </Heading>
+          <List>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            RAF
+          </Heading>
+          <List>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Voice Commands
+          </Heading>
+          <List>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+          </List>
+        </Slide>
+        <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
+          <Heading size={6} textColor="secondary" caps>
+            Roku Products
+          </Heading>
+          <List>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
+            <Appear><ListItem></ListItem></Appear>
           </List>
         </Slide>
         <Slide transition={['fade']} bgColor="secondary" textColor="primary">
@@ -87,63 +190,6 @@ export default class Presentation extends React.Component {
             <Quote>Example Quote</Quote>
             <Cite>Author</Cite>
           </BlockQuote>
-        </Slide>
-        <Slide>
-          <h3>Bar</h3>
-          <Bar
-            data='https://raw.githubusercontent.com/jwilber/random_data/master/flavors.csv'
-            labels='flavor'
-            values='price'
-          />
-        </Slide>
-        <Slide>
-          <h3>Pie</h3>
-          <Pie
-            data={{
-              labels: ['North', 'South', 'East', 'West'],
-              values: [10, 5, 8, 3]
-            }}
-            title='Regions'
-            colors={['red', 'orange', 'blue', 'skyblue']}
-            roughness={2}
-          />
-        </Slide>
-        <Slide>
-          <h3>Donut</h3>
-          <Donut
-            data={{
-              labels: ['JNCO Jeans', 'Sweat Pants', 'Jorts'],
-              values: [20, 10, 2]
-            }}
-            title='Pants I Got Clowned On For Wearing In High School'
-            colors={['red', 'orange', 'blue', 'skyblue']}
-            roughness={2}
-          />
-        </Slide>
-        <Slide>
-          <h3>Scatter</h3>
-          <Scatter
-            data={{
-              x: [1, 2, 3, 7, 5, 9],
-              y: [240, 40, 40, 160, 100],
-            }}
-            title='Regions'
-            radius={[25, 10, 40, 30, 60]}
-            colors={['green', 'red', 'blue', 'black']}
-            axisRoughness={2}
-          />
-        </Slide>
-        <Slide>
-          <h3>BarH</h3>
-          <BarH
-            data={{
-              labels: ['1992 Ford Aerostar Van', '2013 Kia Rio', '1980 Honda CB 125s', '1992 Toyota Tercel'],
-              values: [8, 4, 6, 2]
-            }}
-            title="Vehicles I've Had"
-            colors={['red', 'orange', 'blue', 'skyblue']}
-            roughness={2}
-          />
         </Slide>
       </Deck>
     );
