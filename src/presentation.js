@@ -47,6 +47,14 @@ export default class Presentation extends React.Component {
             Roku Summit 2019
           </Heading>
         </Slide>
+        <Slide transition={['zoom']} bgColor="primary">
+          <Heading size={3} fit lineHeight={1} textColor="secondary">
+            Los Gatos, California.
+          </Heading>
+          <Heading size={3} fit lineHeight={1} textColor="tertiary">
+            October 8th and 9th, 2019.
+          </Heading>
+        </Slide>
         <Slide transition={['fade']} bgColor="primary" textColor="tertiary">
           <Heading size={6} textColor="secondary" caps>
             Roku Summit Topics
